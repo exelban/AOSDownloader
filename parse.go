@@ -18,8 +18,6 @@ type Node struct {
 }
 
 func parseURI(uri string, path string) (*Node, int, error) {
-	log.Printf("%s - %s", uri, path)
-
 	node := &Node{
 		URI:   path,
 		Nodes: &[]Node{},
